@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #FFFFFF;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .mb-main-box {
+    border: 1px solid #E0E0E0;
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    max-width: 90%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+  }
+  .mb-main-box .heading {
+    margin: 0px 0px 8px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+  .mb-main-box .form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 8px;
+    margin: 0px 0px 5px 0px;
+  }
+  .mb-main-box .form .password, .mb-main-box .form .username {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    height: 48px;
+    width: 90%;
+    color: #333333;
+    outline: none;
+    cursor: pointer;
+  }
+  .mb-main-box .form .submit {
+    text-align: center;
+    background-color: #DC3545;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    height: 48px;
+    width: 90%;
+    transition: all 0.3s ease;
+  }
+  .mb-main-box .form .submit:hover {
+    background-color: #E2E6EA;
+    color: #333333;
+  }
+  .mb-main-box .back {
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: #007BFF;
+    background-color: transparent;
+  }
+}/*# sourceMappingURL=passManage.css.map */

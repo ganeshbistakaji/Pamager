@@ -1,0 +1,70 @@
+@import "../variables";
+@import "../../../fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font_inter;
+    background-color: $background;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-box {
+        margin-top: 24px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            width: 80%;
+            height: 48px;
+            border-radius: 10px;
+            background-color: $accent;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: $hover;
+                color: $primary_text;
+            }
+        }
+
+        .logout, .admin-mg {
+            background-color: $warning;
+            color: $primary_text;
+        }
+
+        .delete-acc {
+            background-color: $error;
+            color: $primary_text;
+        }
+
+        .back {
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none;
+            color: $accent;
+            background-color: transparent;
+
+            &:hover {
+                &:hover {
+                    background-color: transparent;
+                    color: $accent;
+                }
+            }
+        }
+    }
+}

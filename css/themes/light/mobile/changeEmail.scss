@@ -1,0 +1,118 @@
+@import "../variables";
+@import "../../../fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font_inter;
+    background-color: $background;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .mb-main-box {
+        border: 1px solid $border;
+        background-color: $card;
+        border-radius: 10px;
+        max-width: 90%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+
+        .brand {
+            margin: 0px 0px 8px 0px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            color: $accent;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 8px;
+            margin: 0px 0px 5px 0px;
+
+            input {
+                font-size: 16px;
+                background-color: $background;
+                border: 1px solid $border;
+                border-radius: 10px;
+                height: 48px;
+                width: 90%;
+                padding-left: 5%;
+                color: $primary_text;
+                outline: none;
+
+                &:active {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    font-size: 16px;
+                    color: $secondary_text;
+                }
+            }
+
+            .submit {
+                background-color: $accent;
+                color: white;
+                border: none;
+                font-weight: bold;
+                padding: 0;
+
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background-color: $hover;
+                    color: $primary_text;
+                }
+            }
+        }
+
+        .back {
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none;
+            color: $accent;
+            background-color: transparent;
+        }
+
+        .info {
+            width: 95%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .resend {
+            width: 95%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            text-decoration: none;
+            margin: 0px 0px 5px 0px;
+        }
+    }
+
+    .new-email {
+        display: none;
+    }
+}

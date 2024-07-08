@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-box {
+    margin-top: 24px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main-box a {
+    width: 80%;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  .main-box a:hover {
+    background-color: #E2E6EA;
+    color: #333333;
+  }
+  .main-box .logout, .main-box .admin-mg {
+    background-color: #FFC107;
+    color: #333333;
+  }
+  .main-box .delete-acc {
+    background-color: #DC3545;
+    color: #333333;
+  }
+  .main-box .back {
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: #007BFF;
+    background-color: transparent;
+  }
+  .main-box .back:hover:hover {
+    background-color: transparent;
+    color: #007BFF;
+  }
+}/*# sourceMappingURL=accountHome.css.map */
