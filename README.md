@@ -1,7 +1,7 @@
 ### Pamager Setup
 *Pamager currently only supports devices with width less than 768px. Anything above that will cause style not being added.*
 
-Download the source code from [HERE](http://https://github.com/ganeshbistakaji/Pamager/releases/ "HERE")
+Download the source code from [HERE](https://github.com/ganeshbistakaji/Pamager/releases/ "HERE")
 
 - After downloading make sure to unarchive the file.
 - We need to install phpMailer library for mailing system (must install).
