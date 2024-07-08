@@ -55,4 +55,5 @@ CREATE TABLE accounts (
 
 ### Credits
 Developer: Ganesh Bista (deadbush, deadbushmc, ganeshbistakaji)
+
 UI Designer: Ganesh Bista, Harshita Jitani
